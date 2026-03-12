@@ -15,6 +15,7 @@ def generate_rss():
     fg.description('自动扫描“播客”文件夹生成的订阅源')
     fg.link(href=BASE_URL, rel='alternate')
     fg.language('zh-CN')
+    fg.logo(f"{BASE_URL}cover.jpg")
 
     # 检查文件夹是否存在
     if not os.path.exists(TARGET_FOLDER):
